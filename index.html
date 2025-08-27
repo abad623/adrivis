@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrivis - AI-Powered Business Intelligence</title>
+    <meta name="description"
+        content="Transform complex business data into clear, actionable insights with AI-powered weekly reports for online shop owners.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Left half circle (dark background) -->
+                        <path d="M 20 1 A 19 19 0 0 1 20 39 Z" fill="rgba(15, 23, 42, 0.8)" stroke="#000000"
+                            stroke-width="1" />
+                        <!-- Right half circle (dark background) -->
+                        <path d="M 20 1 A 19 19 0 0 0 20 39 Z" fill="rgba(15, 23, 42, 0.8)" stroke="#000000"
+                            stroke-width="1" />
+                        <!-- Dividing line -->
+                        <line x1="20" y1="1" x2="20" y2="39" stroke="#FFFFFF" stroke-width="1" />
+                        <!-- Big A on left side -->
+                        <text x="10" y="26" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif"
+                            font-size="16" font-weight="700">A</text>
+                        <!-- 3 parallel lines on right side (AI processing) -->
+                        <line x1="26" y1="18" x2="34" y2="18" stroke="#FFFFFF" stroke-width="2" />
+                        <line x1="26" y1="22" x2="34" y2="22" stroke="#FFFFFF" stroke-width="2" />
+                        <line x1="26" y1="26" x2="34" y2="26" stroke="#FFFFFF" stroke-width="2" />
+                    </svg>
+                    <span class="logo-text">
+                        <span class="letter-normal">Adr</span><span class="letter-black">i</span><span
+                            class="letter-normal">v</span><span class="letter-black letter-rotated">i</span><span
+                            class="letter-normal">s</span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🛍️ For Online Shop Owners</span>
+                </div>
+                <h1 class="hero-title">
+                    Your shop data, <span class="gradient-text">decoded by AI</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Transform complex e-commerce metrics into simple, human-readable insights. Get weekly AI reports
+                    that tell you exactly what's happening in your business and what to do next.
+                </h2>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <span class="feature-icon">📊</span>
+                        <span>Connect your online shop</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-icon">🤖</span>
+                        <span>AI analyzes your data</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-icon">📧</span>
+                        <span>Get actionable insights weekly</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+                    <p class="cta-note">Early Access • Limited Spots Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Email Preview -->
+    <section class="email-preview-section">
+        <div class="container">
+            <div class="section-header">
+                <h3>See What You'll Receive</h3>
+                <p>Here's an example of the weekly AI report you'll get in your inbox</p>
+            </div>
+            <div class="email-preview">
+                <div class="email-header">
+                    <div class="email-from">
+                        <div class="sender-avatar">📊</div>
+                        <div class="sender-info">
+                            <div class="sender-name">Adrivis AI Reports</div>
+                            <div class="sender-email">insights@adrivis.com</div>
+                        </div>
+                    </div>
+                    <div class="email-subject">
+                        <h3>📈 Your Weekly Business Report - Revenue Up 23%!</h3>
+                        <span class="email-date">Monday, Aug 26, 2024</span>
+                    </div>
+                </div>
+                <div class="email-content">
+                    <div class="greeting">
+                        <p>Hi Sarah! 👋</p>
+                        <p>Here's your AI-powered business summary for the week ending Aug 25, 2024:</p>
+                    </div>
+                    <div class="metrics-section">
+                        <h4>📊 Key Metrics</h4>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <span class="metric-label">Revenue</span>
+                                <span class="metric-value success">$12,450</span>
+                                <span class="metric-change positive">+23% vs last week</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Orders</span>
+                                <span class="metric-value">287</span>
+                                <span class="metric-change positive">+15% vs last week</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Avg Order Value</span>
+                                <span class="metric-value">$43.38</span>
+                                <span class="metric-change positive">+7% vs last week</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="insights-section">
+                        <h4>🤖 AI Insights</h4>
+                        <p><strong>Traffic analysis:</strong> Your organic search traffic increased 18% this week,
+                            mainly from "summer dresses" keywords. This suggests strong seasonal demand in your niche.
+                        </p>
+
+                        <p><strong>Conversion patterns:</strong> Your conversion rate (2.3%) is 15% higher than the
+                            fashion industry average (2.0%). However, mobile users convert at only 1.8% vs desktop 2.9%.
+                        </p>
+
+                        <p><strong>Customer lifetime value:</strong> Customers who purchase within their first 7 days
+                            have 3x higher lifetime value ($180 vs $60). Your welcome email series is driving early
+                            purchases effectively.</p>
+
+                        <p><strong>Product performance:</strong> "Blue Summer Dress" accounts for 23% of revenue but
+                            only 8% of inventory. Stock velocity suggests you'll sell out in 6 days at current pace.</p>
+                    </div>
+
+                    <div class="recommendations-section">
+                        <h4>💡 Recommended Actions</h4>
+                        <div class="recommendation-item">
+                            <strong>1. Optimize mobile experience:</strong> Your mobile conversion rate is 38% below
+                            desktop. Test one-click checkout or reduce form fields to match industry standards (2.2%).
+                        </div>
+                        <div class="recommendation-item">
+                            <strong>2. Capitalize on search trends:</strong> "Summer dresses" search volume is up 45% vs
+                            last month. Consider increasing Google Ads budget for these keywords.
+                        </div>
+                        <div class="recommendation-item">
+                            <strong>3. Inventory management:</strong> Reorder "Blue Summer Dress" immediately - it's
+                            your top performer and will stock out before next delivery window.
+                        </div>
+                        <div class="recommendation-item">
+                            <strong>4. Expand welcome series:</strong> Since early purchasers have 3x higher LTV, add a
+                            day-3 follow-up email with personalized product recommendations.
+                        </div>
+                        <div class="recommendation-item">
+                            <strong>5. Geographic opportunity:</strong> California orders increased 34% but you're not
+                            running targeted ads there. Test geo-targeted campaigns in high-performing regions.
+                        </div>
+                    </div>
+
+                    <div class="data-sources">
+                        <small><em>Data sources: Shopify Analytics, Google Analytics, industry benchmarks from
+                                Shopify Plus merchants</em></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01.</div>
+                    <div class="feature-content">
+                        <h4 class="feature-title">AI-Powered Analysis</h4>
+                        <p class="feature-description">Advanced AI algorithms analyze your business data and transform
+                            complex metrics into clear, actionable insights delivered in plain English.</p>
+                        <div class="feature-status coming">Coming Soon</div>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">02.</div>
+                    <div class="feature-content">
+                        <h4 class="feature-title">Weekly Email Reports</h4>
+                        <p class="feature-description">Beautiful, personalized reports delivered to your inbox every
+                            week with key metrics, trends, and growth recommendations.</p>
+                        <div class="feature-status coming">Coming Soon</div>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">03.</div>
+                    <div class="feature-content">
+                        <h4 class="feature-title">Multi-Platform Integration</h4>
+                        <p class="feature-description">Connect your Shopify, WooCommerce, or other e-commerce platforms
+                            for unified insights across all your sales channels.</p>
+                        <div class="feature-status coming">Coming Soon</div>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">04.</div>
+                    <div class="feature-content">
+                        <h4 class="feature-title">Trend Predictions</h4>
+                        <p class="feature-description">AI-powered forecasting helps you anticipate market trends and
+                            make data-driven decisions for future growth.</p>
+                        <div class="feature-status coming">Coming Soon</div>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">05.</div>
+                    <div class="feature-content">
+                        <h4 class="feature-title">Custom Dashboards</h4>
+                        <p class="feature-description">Personalized dashboards that focus on the metrics that matter
+                            most to your specific business goals and objectives.</p>
+                        <div class="feature-status coming">Coming Soon</div>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">06.</div>
+                    <div class="feature-content">
+                        <h4 class="feature-title">Smart Alerts</h4>
+                        <p class="feature-description">Intelligent notifications when important changes occur in your
+                            business metrics, so you never miss critical insights.</p>
+                        <div class="feature-status coming">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section -->
+    <section id="waitlist" class="waitlist">
+        <div class="container">
+            <div class="waitlist-content">
+                <h2 class="waitlist-title">Join the Waitlist</h2>
+                <p class="waitlist-subtitle">Be among the first to experience AI-powered business intelligence. Get
+                    early access and help shape the future of data insights.</p>
+
+                <form class="waitlist-form" id="waitlistForm">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                    </div>
+                    <p class="form-note">No spam, ever. Unsubscribe at any time.</p>
+                </form>
+
+                <div class="waitlist-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Early subscribers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Q1 2025</span>
+                        <span class="stat-label">Expected launch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I've been using Adrivis, and it does exactly what I want it to do. Much easier to understand
+                            my store performance than diving into Shopify analytics."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah Chen</strong><br>
+                        <span>E-commerce Founder</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The first impression is always important and it's nice to get beautiful reports that I can
+                            actually understand and act on."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Marcus Rodriguez</strong><br>
+                        <span>Shopify Store Owner</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Finally, data insights that don't require a PhD in analytics. Adrivis makes complex metrics
+                            simple and actionable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Emma Thompson</strong><br>
+                        <span>Digital Marketing Manager</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <h3>Simple insights are always free</h3>
+                <p>Advanced analytics are reasonably priced</p>
+            </div>
+
+            <div class="pricing-toggle">
+                <span>Monthly</span>
+                <label class="toggle">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Yearly <span class="save-badge">Save 50%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header-card">
+                        <h4>Adrivis</h4>
+                        <div class="price">€0</div>
+                        <p>You know that understanding your data shouldn't cost a fortune</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✓ Weekly email reports</div>
+                        <div class="feature">✓ Basic analytics</div>
+                        <div class="feature">✓ Shopify integration</div>
+                        <div class="feature">✓ Email support</div>
+                        <div class="feature disabled">✗ Advanced AI insights</div>
+                        <div class="feature disabled">✗ Custom dashboards</div>
+                    </div>
+                    <button class="btn btn-outline">Get Started Free</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-header-card">
+                        <h4>Adrivis Pro</h4>
+                        <div class="price">€15<span>/month</span></div>
+                        <p>You want your business insights to be as beautiful as your products</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✓ Everything in Free</div>
+                        <div class="feature">✓ Advanced AI insights</div>
+                        <div class="feature">✓ Trend predictions</div>
+                        <div class="feature">✓ Custom dashboards</div>
+                        <div class="feature">✓ Priority support</div>
+                        <div class="feature">✓ Export reports</div>
+                    </div>
+                    <button class="btn btn-primary">Start Free Trial</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header-card">
+                        <h4>Adrivis Enterprise</h4>
+                        <div class="price">€99<span>/month</span></div>
+                        <p>You know that data is your most valuable business asset</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✓ Everything in Pro</div>
+                        <div class="feature">✓ Multi-platform support</div>
+                        <div class="feature">✓ Custom integrations</div>
+                        <div class="feature">✓ Dedicated support</div>
+                        <div class="feature">✓ Team collaboration</div>
+                        <div class="feature">✓ White-label reports</div>
+                    </div>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 20 1 A 19 19 0 0 1 20 39 Z" fill="rgba(15, 23, 42, 0.8)" stroke="#000000"
+                                stroke-width="1" />
+                            <path d="M 20 1 A 19 19 0 0 0 20 39 Z" fill="rgba(15, 23, 42, 0.8)" stroke="#000000"
+                                stroke-width="1" />
+                            <line x1="20" y1="1" x2="20" y2="39" stroke="#FFFFFF" stroke-width="1" />
+                            <text x="10" y="26" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif"
+                                font-size="16" font-weight="700">A</text>
+                            <line x1="26" y1="18" x2="34" y2="18" stroke="#FFFFFF" stroke-width="2" />
+                            <line x1="26" y1="22" x2="34" y2="22" stroke="#FFFFFF" stroke-width="2" />
+                            <line x1="26" y1="26" x2="34" y2="26" stroke="#FFFFFF" stroke-width="2" />
+                        </svg>
+                        <span>Adrivis</span>
+                    </div>
+                    <p class="footer-tagline">If Shopify Analytics was as beautiful as WeTransfer, as insightful as
+                        ChatGPT, and as simple as your morning coffee.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>Product</h5>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Live Example</a>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Company</h5>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Support</h5>
+                        <a href="#">Help Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Adrivis. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-new.js"></script>
+</body>
+
+</html>
