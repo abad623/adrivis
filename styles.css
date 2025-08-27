@@ -424,6 +424,32 @@ body {
     font-size: 12px;
 }
 
+/* Success Message */
+.success-message {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 32px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 32px rgba(16, 185, 129, 0.3);
+}
+
+.success-message h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.success-message p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    line-height: 1.5;
+}
+
 /* Waitlist Section */
 .waitlist {
     padding: 100px 0;

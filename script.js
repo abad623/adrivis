@@ -1,12 +1,27 @@
 // Waitlist form functionality
 document.addEventListener('DOMContentLoaded', function () {
-    const waitlistForm = document.getElementById('waitlistForm');
+    // Check if user returned from successful form submission
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        // Show success message
+        const successMessage = document.getElementById('success-message');
+        const waitlistForm = document.getElementById('waitlistForm');
 
+        if (successMessage && waitlistForm) {
+            waitlistForm.style.display = 'none';
+            successMessage.style.display = 'block';
+
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Clean up URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    }
+
+    const waitlistForm = document.getElementById('waitlistForm');
     if (waitlistForm) {
         waitlistForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const email = document.getElementById('email').value;
             const submitButton = waitlistForm.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
 
@@ -14,35 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
             submitButton.textContent = 'Joining...';
             submitButton.disabled = true;
 
-            // Simulate API call (replace with actual endpoint)
+            // Re-enable button after a delay in case of errors
             setTimeout(() => {
-                // Success state
-                submitButton.textContent = 'Joined! ✓';
-                submitButton.style.background = '#22c55e';
-
-                // Reset form
-                document.getElementById('email').value = '';
-
-                // Show success message
-                const successMessage = document.createElement('p');
-                successMessage.textContent = 'Thanks for joining! We\'ll be in touch soon.';
-                successMessage.style.color = '#22c55e';
-                successMessage.style.marginTop = '16px';
-                successMessage.style.fontWeight = '500';
-
-                waitlistForm.appendChild(successMessage);
-
-                // Reset button after delay
-                setTimeout(() => {
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                    submitButton.style.background = '';
-                    if (successMessage.parentNode) {
-                        successMessage.remove();
-                    }
-                }, 3000);
-
-            }, 1500);
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 5000);
         });
     }
 

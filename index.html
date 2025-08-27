@@ -259,13 +259,22 @@
                 <p class="waitlist-subtitle">Be among the first to experience AI-powered business intelligence. Get
                     early access and help shape the future of data insights.</p>
 
-                <form class="waitlist-form" id="waitlistForm">
+                <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST">
                     <div class="form-group">
                         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <input type="hidden" name="_subject" value="New Adrivis Waitlist Signup">
+                        <input type="hidden" name="_next" value="https://abad623.github.io/adrivis?success=true">
                         <button type="submit" class="btn btn-primary">Join Waitlist</button>
                     </div>
                     <p class="form-note">No spam, ever. Unsubscribe at any time.</p>
                 </form>
+
+                <!-- Success message (hidden by default) -->
+                <div id="success-message" class="success-message" style="display: none;">
+                    <h3>🎉 You're on the list!</h3>
+                    <p>Thanks for joining the Adrivis waitlist. We'll be in touch soon with early access details.</p>
+                </div>
 
                 <div class="waitlist-stats">
                     <div class="stat-item">
