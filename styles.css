@@ -49,6 +49,11 @@ body {
     text-decoration: none;
 }
 
+.logo-image {
+    height: 40px;
+    width: auto;
+}
+
 .logo-text {
     font-size: 24px;
     font-weight: 700;
@@ -977,6 +982,11 @@ input:checked+.slider:before {
     margin-bottom: 16px;
     font-size: 20px;
     font-weight: 600;
+}
+
+.footer-logo-image {
+    height: 32px;
+    width: auto;
 }
 
 .footer-tagline {
