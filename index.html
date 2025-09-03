@@ -99,7 +99,9 @@
             <div class="email-preview">
                 <div class="email-header">
                     <div class="email-from">
-                        <div class="sender-avatar">📊</div>
+                        <div class="sender-avatar">
+                            <img src="adrivis.png" alt="Adrivis" class="avatar-logo">
+                        </div>
                         <div class="sender-info">
                             <div class="sender-name">Adrivis AI Reports</div>
                             <div class="sender-email">insights@adrivis.com</div>
@@ -115,66 +117,151 @@
                         <p>Hi Sarah! 👋</p>
                         <p>Here's your AI-powered business summary for the week ending Aug 25, 2024:</p>
                     </div>
+
+                    <!-- Key Metrics with Visual Cards -->
                     <div class="metrics-section">
-                        <h4>📊 Key Metrics</h4>
+                        <div class="section-title">
+                            <span class="section-icon">📊</span>
+                            <h4>Key Metrics</h4>
+                        </div>
                         <div class="metrics-grid">
-                            <div class="metric-item">
-                                <span class="metric-label">Revenue</span>
-                                <span class="metric-value success">$12,450</span>
-                                <span class="metric-change positive">+23% vs last week</span>
+                            <div class="metric-card revenue">
+                                <div class="metric-icon">💰</div>
+                                <div class="metric-content">
+                                    <span class="metric-label">Revenue</span>
+                                    <span class="metric-value">$12,450</span>
+                                    <span class="metric-change positive">
+                                        <span class="change-arrow">↗</span>
+                                        +23% vs last week
+                                    </span>
+                                </div>
                             </div>
-                            <div class="metric-item">
-                                <span class="metric-label">Orders</span>
-                                <span class="metric-value">287</span>
-                                <span class="metric-change positive">+15% vs last week</span>
+                            <div class="metric-card orders">
+                                <div class="metric-icon">🛍️</div>
+                                <div class="metric-content">
+                                    <span class="metric-label">Orders</span>
+                                    <span class="metric-value">287</span>
+                                    <span class="metric-change positive">
+                                        <span class="change-arrow">↗</span>
+                                        +15% vs last week
+                                    </span>
+                                </div>
                             </div>
-                            <div class="metric-item">
-                                <span class="metric-label">Avg Order Value</span>
-                                <span class="metric-value">$43.38</span>
-                                <span class="metric-change positive">+7% vs last week</span>
+                            <div class="metric-card aov">
+                                <div class="metric-icon">📈</div>
+                                <div class="metric-content">
+                                    <span class="metric-label">Avg Order Value</span>
+                                    <span class="metric-value">$43.38</span>
+                                    <span class="metric-change positive">
+                                        <span class="change-arrow">↗</span>
+                                        +7% vs last week
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- AI Insights with Visual Cards -->
                     <div class="insights-section">
-                        <h4>🤖 AI Insights</h4>
-                        <p><strong>Traffic analysis:</strong> Your organic search traffic increased 18% this week,
-                            mainly from "summer dresses" keywords. This suggests strong seasonal demand in your niche.
-                        </p>
+                        <div class="section-title">
+                            <span class="section-icon">🤖</span>
+                            <h4>AI Insights</h4>
+                        </div>
+                        <div class="insights-grid">
+                            <div class="insight-card traffic">
+                                <div class="insight-header">
+                                    <span class="insight-icon">🔍</span>
+                                    <span class="insight-title">Traffic Analysis</span>
+                                </div>
+                                <p>Your organic search traffic increased <span class="highlight-number">18%</span> this week,
+                                    mainly from <span class="highlight-keyword">"summer dresses"</span> keywords. This suggests strong seasonal demand in your niche.</p>
+                            </div>
 
-                        <p><strong>Conversion patterns:</strong> Your conversion rate (2.3%) is 15% higher than the
-                            fashion industry average (2.0%). However, mobile users convert at only 1.8% vs desktop 2.9%.
-                        </p>
+                            <div class="insight-card conversion">
+                                <div class="insight-header">
+                                    <span class="insight-icon">🎯</span>
+                                    <span class="insight-title">Conversion Patterns</span>
+                                </div>
+                                <p>Your conversion rate (<span class="highlight-number">2.3%</span>) is <span class="highlight-positive">15% higher</span> than the
+                                    fashion industry average (2.0%). However, mobile users convert at only <span class="highlight-warning">1.8%</span> vs desktop <span class="highlight-number">2.9%</span>.</p>
+                            </div>
 
-                        <p><strong>Customer lifetime value:</strong> Customers who purchase within their first 7 days
-                            have 3x higher lifetime value ($180 vs $60). Your welcome email series is driving early
-                            purchases effectively.</p>
+                            <div class="insight-card ltv">
+                                <div class="insight-header">
+                                    <span class="insight-icon">💎</span>
+                                    <span class="insight-title">Customer Lifetime Value</span>
+                                </div>
+                                <p>Customers who purchase within their first 7 days have <span class="highlight-number">3x higher</span> lifetime value
+                                    (<span class="highlight-positive">$180</span> vs <span class="highlight-neutral">$60</span>). Your welcome email series is driving early purchases effectively.</p>
+                            </div>
 
-                        <p><strong>Product performance:</strong> "Blue Summer Dress" accounts for 23% of revenue but
-                            only 8% of inventory. Stock velocity suggests you'll sell out in 6 days at current pace.</p>
+                            <div class="insight-card product">
+                                <div class="insight-header">
+                                    <span class="insight-icon">👗</span>
+                                    <span class="insight-title">Product Performance</span>
+                                </div>
+                                <p><span class="highlight-keyword">"Blue Summer Dress"</span> accounts for <span class="highlight-number">23%</span> of revenue but
+                                    only <span class="highlight-warning">8%</span> of inventory. Stock velocity suggests you'll sell out in <span class="highlight-urgent">6 days</span> at current pace.</p>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Recommended Actions with Priority Cards -->
                     <div class="recommendations-section">
-                        <h4>💡 Recommended Actions</h4>
-                        <div class="recommendation-item">
-                            <strong>1. Optimize mobile experience:</strong> Your mobile conversion rate is 38% below
-                            desktop. Test one-click checkout or reduce form fields to match industry standards (2.2%).
+                        <div class="section-title">
+                            <span class="section-icon">💡</span>
+                            <h4>Recommended Actions</h4>
                         </div>
-                        <div class="recommendation-item">
-                            <strong>2. Capitalize on search trends:</strong> "Summer dresses" search volume is up 45% vs
-                            last month. Consider increasing Google Ads budget for these keywords.
-                        </div>
-                        <div class="recommendation-item">
-                            <strong>3. Inventory management:</strong> Reorder "Blue Summer Dress" immediately - it's
-                            your top performer and will stock out before next delivery window.
-                        </div>
-                        <div class="recommendation-item">
-                            <strong>4. Expand welcome series:</strong> Since early purchasers have 3x higher LTV, add a
-                            day-3 follow-up email with personalized product recommendations.
-                        </div>
-                        <div class="recommendation-item">
-                            <strong>5. Geographic opportunity:</strong> California orders increased 34% but you're not
-                            running targeted ads there. Test geo-targeted campaigns in high-performing regions.
+                        <div class="recommendations-grid">
+                            <div class="recommendation-card high-priority">
+                                <div class="priority-badge">High Priority</div>
+                                <div class="recommendation-header">
+                                    <span class="rec-icon">📱</span>
+                                    <span class="rec-title">Optimize Mobile Experience</span>
+                                </div>
+                                <p>Your mobile conversion rate is <span class="highlight-warning">38% below</span> desktop.
+                                   Test one-click checkout or reduce form fields to match industry standards (<span class="highlight-number">2.2%</span>).</p>
+                            </div>
+
+                            <div class="recommendation-card high-priority">
+                                <div class="priority-badge">High Priority</div>
+                                <div class="recommendation-header">
+                                    <span class="rec-icon">📦</span>
+                                    <span class="rec-title">Inventory Management</span>
+                                </div>
+                                <p>Reorder <span class="highlight-keyword">"Blue Summer Dress"</span> immediately - it's your top performer
+                                   and will stock out in <span class="highlight-urgent">6 days</span> before next delivery window.</p>
+                            </div>
+
+                            <div class="recommendation-card medium-priority">
+                                <div class="priority-badge">Medium Priority</div>
+                                <div class="recommendation-header">
+                                    <span class="rec-icon">🔍</span>
+                                    <span class="rec-title">Capitalize on Search Trends</span>
+                                </div>
+                                <p><span class="highlight-keyword">"Summer dresses"</span> search volume is up <span class="highlight-positive">45%</span> vs last month.
+                                   Consider increasing Google Ads budget for these keywords.</p>
+                            </div>
+
+                            <div class="recommendation-card medium-priority">
+                                <div class="priority-badge">Medium Priority</div>
+                                <div class="recommendation-header">
+                                    <span class="rec-icon">📧</span>
+                                    <span class="rec-title">Expand Welcome Series</span>
+                                </div>
+                                <p>Since early purchasers have <span class="highlight-number">3x higher</span> LTV, add a day-3 follow-up email
+                                   with personalized product recommendations.</p>
+                            </div>
+
+                            <div class="recommendation-card low-priority">
+                                <div class="priority-badge">Opportunity</div>
+                                <div class="recommendation-header">
+                                    <span class="rec-icon">🌎</span>
+                                    <span class="rec-title">Geographic Opportunity</span>
+                                </div>
+                                <p>California orders increased <span class="highlight-positive">34%</span> but you're not running targeted ads there.
+                                   Test geo-targeted campaigns in high-performing regions.</p>
+                            </div>
                         </div>
                     </div>
 
